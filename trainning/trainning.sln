@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "composition1", "composition1\composition1.csproj", "{ABA4721D-5568-44BA-AAFE-014295F37862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo-string-builder", "demo-string-builder\demo-string-builder.csproj", "{4FAA535D-CB40-4256-BE44-10B24DFA4641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-string-builder", "demo-string-builder\demo-string-builder.csproj", "{4FAA535D-CB40-4256-BE44-10B24DFA4641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "challenge-enum-composition", "challenge-enum-composition\challenge-enum-composition.csproj", "{A2CFF4E4-69E5-4A24-AD53-3FF0459F3F2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4FAA535D-CB40-4256-BE44-10B24DFA4641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FAA535D-CB40-4256-BE44-10B24DFA4641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FAA535D-CB40-4256-BE44-10B24DFA4641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CFF4E4-69E5-4A24-AD53-3FF0459F3F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CFF4E4-69E5-4A24-AD53-3FF0459F3F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CFF4E4-69E5-4A24-AD53-3FF0459F3F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CFF4E4-69E5-4A24-AD53-3FF0459F3F2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
