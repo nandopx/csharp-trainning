@@ -1,4 +1,4 @@
-﻿using demo_string_builder.Entities
+﻿using demo_string_builder.Entities;
 using System;
 
 namespace demo_string_builder
@@ -18,6 +18,19 @@ namespace demo_string_builder
 
             p1.AddComment(c1);
             p1.AddComment(c2);
+
+            Comment c3 = new Comment("Good night!");
+            Comment c4 = new Comment("May the Force be with you!");
+            Post p2 = new Post(
+                    DateTime.Parse("28/07/2018 23:14:19"),
+                    "Good night guys",
+                    "See you tomorrow",
+                    5);
+            p2.AddComment(c3);
+            p2.AddComment(c4);
+
+            Console.WriteLine(p1);
+            Console.WriteLine(p2);
         }
     }
 }
