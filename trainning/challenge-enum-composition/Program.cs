@@ -29,22 +29,21 @@ namespace challenge_enum_composition
             Console.Write("Hoa many items to this order? ");
             var items = int.Parse( Console.ReadLine() );
 
-            List<OrderItem> orderItem = new List<OrderItem>();
             for (int i = 0; i < items; i++)
             {
-                Console.Write($"Enter item data #{i+1}:");
+                Console.WriteLine($"Enter item data #{i+1}:");
                 Console.Write("Product name: ");
                 var productName = Console.ReadLine();
                 Console.Write("Product price: ");
                 var productPrice = double.Parse( Console.ReadLine(), CultureInfo.InvariantCulture );
                 Console.Write( "Quantity: " );
                 var quantity = int.Parse( Console.ReadLine() );
-
-                Product product = new Product( name, productPrice );
-                OrderItem orderI = new OrderItem( quantity, product );
-                orderItem.Add( orderI );
+                var product = new Product(productName, productPrice);
+                var orderItem = new OrderItem( quantity, product );
+                order.AddItem( orderItem );
             }
 
+            Console.WriteLine();
             Console.WriteLine("ORDER SUMMARY:");
             Console.WriteLine(order);
         }

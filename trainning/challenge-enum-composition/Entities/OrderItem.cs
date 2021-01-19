@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace challenge_enum_composition.Entities
@@ -27,14 +28,11 @@ namespace challenge_enum_composition.Entities
         public override string ToString ()
         {
             StringBuilder orderItems = new StringBuilder();
-            orderItems.AppendLine( "Order items:" );
-
             orderItems.Append( Product );
-            orderItems.Append( ", Quantity" );
+            orderItems.Append( ", Quantity: " );
             orderItems.Append( Quantity );
-            orderItems.Append( ", Subtotal: " );
-            orderItems.AppendLine( SubTotal().ToString() );
-            orderItems.Append( "Total price: " );
+            orderItems.Append( ", Subtotal: $" );
+            orderItems.AppendLine( SubTotal().ToString("F2", CultureInfo.InvariantCulture) );
 
 
             return orderItems.ToString();

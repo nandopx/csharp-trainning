@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using challenge_enum_composition.Entities.Enum;
 
@@ -33,8 +34,13 @@ namespace challenge_enum_composition.Entities
 
         public double Total ()
         {
-            var total = new OrderItem();
-            return total.SubTotal();
+            var total = 0.0;
+            foreach (OrderItem item in Items)
+            {
+                total += item.SubTotal();
+            }
+
+            return total;
         }
 
         public override string ToString ()
@@ -46,11 +52,15 @@ namespace challenge_enum_composition.Entities
             order.AppendLine( Status.ToString() );
             order.Append( "Client: " );
             order.Append( Client );
+            order.AppendLine( "Order items:" );
 
+            foreach (OrderItem item in Items)
+            {
+                order.Append( item.ToString() );
+            }
 
-
-            order.Append( "Total price: " );
-            order.AppendLine( Total().ToString() );
+            order.Append( "Total price: $" );
+            order.AppendLine( Total().ToString("F2", CultureInfo.InvariantCulture));
 
             return order.ToString();
         }

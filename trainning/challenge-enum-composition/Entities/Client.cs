@@ -24,7 +24,7 @@ namespace challenge_enum_composition.Entities
             StringBuilder client = new StringBuilder();
             client.Append( Name );
             client.Append( " (" );
-            client.Append( BirthDate.ToString() );
+            client.Append( BirthDate.ToString("dd/MM/yyyy") );
             client.Append( ") - " );
             client.AppendLine( Email );
 

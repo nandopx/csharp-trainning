@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace challenge_enum_composition.Entities
@@ -21,8 +22,8 @@ namespace challenge_enum_composition.Entities
         {
             StringBuilder product = new StringBuilder();
             product.Append( Name );
-            product.Append( ", " );
-            product.Append( Price );
+            product.Append( ", $" );
+            product.Append( Price.ToString("F2", CultureInfo.InvariantCulture ));
 
             return product.ToString();
         }
