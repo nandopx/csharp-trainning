@@ -39,7 +39,7 @@ namespace challenge_enum_composition
                 Console.Write( "Quantity: " );
                 var quantity = int.Parse( Console.ReadLine() );
                 var product = new Product(productName, productPrice);
-                var orderItem = new OrderItem( quantity, product );
+                var orderItem = new OrderItem( quantity, productPrice, product );
                 order.AddItem( orderItem );
             }
 

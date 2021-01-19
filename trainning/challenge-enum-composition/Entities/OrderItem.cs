@@ -13,10 +13,10 @@ namespace challenge_enum_composition.Entities
 
         public OrderItem () { }
 
-        public OrderItem ( int quantity, Product product )
+        public OrderItem ( int quantity, double price, Product product )
         {
             Quantity = quantity;
-            Price = product.Price;
+            Price = price;
             Product = product;
         }
          
