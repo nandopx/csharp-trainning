@@ -18,7 +18,7 @@ namespace demo_inheritance_polymorphism
             {
                 Console.WriteLine($"Employee #{i+1} data:");
                 Console.Write("Outsourced (y/n)? ");
-                var typeOfEmployee = char.Parse( Console.ReadLine().ToUpper() );
+                var typeOfEmployee = char.Parse( Console.ReadLine().ToLower() );
                 Console.Write("Name: ");
                 var name = Console.ReadLine();
                 Console.Write("Hours: ");
@@ -26,7 +26,7 @@ namespace demo_inheritance_polymorphism
                 Console.Write("Value per hour: ");
                 var valuePerHour = double.Parse( Console.ReadLine(), CultureInfo.InvariantCulture );
 
-                if (typeOfEmployee == 'Y')
+                if (typeOfEmployee == 'y')
                 {
                     Console.Write("Additional charge: ");
                     var additionalCharge = double.Parse( Console.ReadLine(), CultureInfo.InvariantCulture );
