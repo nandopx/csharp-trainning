@@ -23,7 +23,7 @@ namespace demo_inheritance_polymorphism.Entities
 
         public virtual double Payment ()
         {
-            return ValuePerHour * Hours;
+            return Hours * ValuePerHour;
         }
     }
 }
