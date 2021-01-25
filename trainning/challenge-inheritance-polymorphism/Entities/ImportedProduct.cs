@@ -20,7 +20,12 @@ namespace challenge_inheritance_polymorphism.Entities
 
         public override string PriceTag ()
         {
-            return base.PriceTag() + CustomsFee + " (Customs fee: $ " + CustomsFee.ToString("F2", CultureInfo.InvariantCulture) + ")";
+            return Name + " $ " + TotalPrice() + " (Customs fee: $ " + CustomsFee.ToString("F2", CultureInfo.InvariantCulture) + ")";
+        }
+
+        public double TotalPrice ()
+        {
+            return Price + CustomsFee;
         }
     }
 }
