@@ -6,7 +6,7 @@ namespace challenge_inheritance_polymorphism
     {
         static void Main ( string[] args )
         {
-            Console.WriteLine( "Hello World!" );
+            
         }
     }
 }
