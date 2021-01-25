@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-string-builder", "demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "challenge-enum-composition", "challenge-enum-composition\challenge-enum-composition.csproj", "{A2CFF4E4-69E5-4A24-AD53-3FF0459F3F2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo-inheritance-polymorphism", "demo-inheritance-polymorphism\demo-inheritance-polymorphism.csproj", "{758C8049-5163-4EF0-ABBB-97CDA80EC7EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-inheritance-polymorphism", "demo-inheritance-polymorphism\demo-inheritance-polymorphism.csproj", "{758C8049-5163-4EF0-ABBB-97CDA80EC7EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "challenge-inheritance-polymorphism", "challenge-inheritance-polymorphism\challenge-inheritance-polymorphism.csproj", "{15B223FF-C91E-45BD-9BBD-564CE919764C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{758C8049-5163-4EF0-ABBB-97CDA80EC7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{758C8049-5163-4EF0-ABBB-97CDA80EC7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{758C8049-5163-4EF0-ABBB-97CDA80EC7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B223FF-C91E-45BD-9BBD-564CE919764C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B223FF-C91E-45BD-9BBD-564CE919764C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B223FF-C91E-45BD-9BBD-564CE919764C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B223FF-C91E-45BD-9BBD-564CE919764C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
