@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 
 namespace challenge_inheritance_polymorphism.Entities
 {
@@ -20,7 +18,12 @@ namespace challenge_inheritance_polymorphism.Entities
 
         public override string PriceTag ()
         {
-            return Name + " (used) $ " + Price + " (Manufacture date: " + ManufactureDate.ToString("dd/MM/yyyy") + ")";
+            return Name
+                + " (used) $ "
+                + Price.ToString( "F2", CultureInfo.InvariantCulture )
+                + " (Manufacture date: "
+                + ManufactureDate.ToString("dd/MM/yyyy")
+                + ")";
         }
     }
 }
