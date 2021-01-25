@@ -4,7 +4,7 @@ using System.Text;
 
 namespace demo_inheritance_polymorphism.Entities
 {
-    class OutsourceEmployee : Employee
+    sealed class OutsourceEmployee : Employee
     {
         public double AdditionalCharge { get; set; }
 
@@ -19,9 +19,8 @@ namespace demo_inheritance_polymorphism.Entities
 
         public override double Payment ()
         {
-            base.Payment();
-            AdditionalCharge += 1.1 * AdditionalCharge;
-            return AdditionalCharge;
+            var paymentOutsource = base.Payment();
+            return paymentOutsource += AdditionalCharge * 1.1;
         }
     }
 }
