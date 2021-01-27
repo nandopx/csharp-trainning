@@ -14,7 +14,7 @@ namespace demo_abstractMethods.Entities
 
         public override double Area ()
         {
-            return Math.PI * Math.Pow( Radius, Radius );
+            return Math.PI * Math.Pow( Radius, 2 );
         }
     }
 }
