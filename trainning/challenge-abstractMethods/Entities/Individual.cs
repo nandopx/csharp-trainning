@@ -14,9 +14,11 @@ namespace challenge_abstractMethods.Entities
         {
             var tax = 0.0;
             if (Anualincome < 20000.00)
+                tax += Anualincome * 0.15;
+            else
                 tax += Anualincome * 0.25;
 
-            if (HelthExpenditures > 0)
+            if (HelthExpenditures > 0.0)
                 tax -= HelthExpenditures * 0.50;
 
             return tax;
