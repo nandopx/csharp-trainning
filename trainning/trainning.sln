@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-inheritance-polymorphi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "challenge-inheritance-polymorphism", "challenge-inheritance-polymorphism\challenge-inheritance-polymorphism.csproj", "{15B223FF-C91E-45BD-9BBD-564CE919764C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo-abstractMethods", "demo-abstractMethods\demo-abstractMethods.csproj", "{CE692A25-78E7-4CE7-90D0-1EE133085248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-abstractMethods", "demo-abstractMethods\demo-abstractMethods.csproj", "{CE692A25-78E7-4CE7-90D0-1EE133085248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "challenge-abstractMethods", "challenge-abstractMethods\challenge-abstractMethods.csproj", "{23F4EA35-B1DC-427C-9CD0-01F2CC7A3803}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CE692A25-78E7-4CE7-90D0-1EE133085248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE692A25-78E7-4CE7-90D0-1EE133085248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE692A25-78E7-4CE7-90D0-1EE133085248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F4EA35-B1DC-427C-9CD0-01F2CC7A3803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F4EA35-B1DC-427C-9CD0-01F2CC7A3803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F4EA35-B1DC-427C-9CD0-01F2CC7A3803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F4EA35-B1DC-427C-9CD0-01F2CC7A3803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
