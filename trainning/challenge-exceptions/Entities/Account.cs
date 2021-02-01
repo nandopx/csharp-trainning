@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using challenge_exceptions.Entities.Exceptions;
+
 namespace challenge_exceptions.Entities
 {
     class Account
@@ -27,7 +29,12 @@ namespace challenge_exceptions.Entities
 
         public void WithDraw (double amount)
         {
-            Balance -= +amount;
+            if (amount > Balance)
+                throw new DomainException("No enough balance");
+            else if (amount > WithDrawLimit)
+                throw new DomainException("The amount exceeds witdraw limit");
+            else
+                Balance -= +amount;
         }
     }
 }
